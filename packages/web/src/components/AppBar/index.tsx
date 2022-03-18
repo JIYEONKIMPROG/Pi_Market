@@ -113,24 +113,32 @@ export const MetaplexMenu = () => {
 export const LogoLink = () => {
   return (
     <Link to={`/`}>
-      <img  style={{width:'60px'}} src={'/icon.png'} />
+      <img style={{ width: '60px' }} src={'/icon.png'} />
     </Link>
   );
 };
 
 export const AppBar = () => {
+  const [searchKey, setSearchKey] = useState('');
   const { connected } = useWallet();
-  const inputStyle={
-    height:'40px',
+  const inputStyle = {
+    height: '40px',
     width: '60em',
-    borderRadius:'20px',
-    border:'none',
-    boxShadow:'4px 4px 4px rgba(0, 0, 0, .3)',
-    marginRight :'3%',
-    padding:'0 15px',
-    color:'black'
+    borderRadius: '20px',
+    border: 'none',
+    boxShadow: '4px 4px 4px rgba(0, 0, 0, .3)',
+    marginRight: '3%',
+    padding: '0 15px',
+    color: 'black',
+  };
 
-  }
+  const onChangeSearch = event => {
+    if (event.key === 'Enter') {
+      setSearchKey(event.target.value);
+      console.log(searchKey);
+    }
+  };
+
   return (
     <>
       <MobileNavbar />
@@ -138,7 +146,13 @@ export const AppBar = () => {
         <div className="app-left">
           <LogoLink />
           &nbsp;&nbsp;&nbsp;
-          <input style={inputStyle}placeholder="search"/>
+          <input
+            type="text"
+            style={inputStyle}
+            placeholder="search"
+            onKeyUp={onChangeSearch}
+            id="search-key"
+          />
           <MetaplexMenu />
         </div>
         <div className="app-right">
