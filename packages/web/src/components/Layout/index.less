@@ -1,0 +1,90 @@
+@import '../../styles/colors.less';
+.metamask-icon {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-image: url(/assets/metamask.svg);
+}
+
+.app-left {
+  width:100em;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  margin-left: 15px;
+}
+
+.app-right {
+  color:black;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  margin-right: 15px;
+}
+
+#desktop-navbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  @media (max-width: @screen-sm-min) {
+    display: none;
+  }
+}
+
+section.ant-layout {
+  width: 100%;
+  margin: auto;
+  position: relative;
+  #width-layout {
+    max-width: 1700px;
+  }
+}
+
+section#main-layout.ant-layout {
+  background-color: white !important;
+  min-height: 100vh;
+
+  span#static-header-gradient {
+    display: none;
+    position: absolute;
+    height: 300px;
+    width: 100%;
+    left: 0;
+  }
+
+  span#static-end-gradient {
+    display: none;
+    position: absolute;
+    height: 300px;
+    width: 100%;
+    left: 0;
+     }
+
+  #bg-gradient {
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    left: 0;
+    top: 510px;
+      display: none;
+  }
+
+  span#main-bg {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 708px;
+     background-position: top left !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    filter: blur(220px);
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.ant-tabs-mobile {
+  @media (max-width: @screen-sm-min) {
+    padding: 20px;
+  }
+}
