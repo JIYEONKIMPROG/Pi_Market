@@ -1,30 +1,30 @@
-## Setup
+# :clapper:Pi-Market:clapper:
+## _EwhaChain idea contest implementation_
 
-Be sure to be running Node v14.17.6 and yarn version 1.22.10.
+## Stacks
+<img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=black">
+<img src="https://img.shields.io/badge/html-E34F26?style=for-the-badge&logo=html5&logoColor=white">
+<img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white">
+<img src="https://img.shields.io/badge/Typescript-3178C6?style=flat&logo=typescript&logoColor=white"/>
 
-`yarn bootstrap`
+- NFT MarketPlace
+- NFT Minting, Search Function....
 
-Then run:
+## Features
 
-`yarn start`
+- 대학별 굿즈를 NFT화!
+- Paint Us with Your NFTs
+- Pi-market is an NFT market where you can mint and freely purchase NFT works related to the school you belong to. Sell and purchase any works of art, including photos, pictures, videos, music, etc. from your beloved school.
 
-You may have to rebuild your package more than one time to secure a
-running environment.
 
-## Known Issues
 
-### Can't find CSS files in common
+## Contributors
 
-Common currently uses a less library to compile down less files into css in both the src directory for the TS server
-in vscode to pick up and in the dist folder for importers like lending and proposal projects to pick up. If you do not see these files appear when running the `npm start lending` or other commands, and you see missing CSS errors,
-you likely did not install the packages for common correctly. Try running:
+프로젝트에 기여한 사람들.... :
 
-`lerna exec npm install --scope @oyster/common` to specifically install packages for common.
+- :girl: 김지연 - frontend [github] https://github.com/JIYEONKIMPROG
+- :girl: 김하은 - frontend
+- :girl: 윤수지 - frontend
+- :girl: 장지선 - productor
 
-Then, test that css transpiling is working:
-
-`lerna exec npm watch-css-src --scope @oyster/common` and verify css files appear next to their less counterparts in src.
-
-## ⚠️ Warning
-
-Any content produced by Solana, or developer resources that Solana provides, are for educational and inspiration purposes only. Solana does not encourage, induce or sanction the deployment of any such applications in violation of applicable laws or regulations.
+We created a new NFT Marketplace through metaplex.
