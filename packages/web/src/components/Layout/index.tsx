@@ -8,6 +8,11 @@ import { Footer } from '../Footer';
 const { Header, Content } = Layout;
 
 export const AppLayout = React.memo(function AppLayoutImpl(props: any) {
+  const submitSearch = (searchKey) => {
+    // console.log('searchKey: ', searchKey);
+    props.propFunction(searchKey);
+  }
+
   return (
     <>
       <Layout id={'main-layout'}>
@@ -16,7 +21,7 @@ export const AppLayout = React.memo(function AppLayoutImpl(props: any) {
         <span id={'static-header-gradient'}></span>
         <span id={'static-end-gradient'}></span>
         <Header className="App-Bar">
-          <AppBar />
+          <AppBar propFunction={submitSearch} />
         </Header>
         <Layout id={'width-layout'}>
           <Content

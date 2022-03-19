@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { HashRouter, Route, Switch } from 'react-router-dom';
 import { Providers } from './providers';
 import {
@@ -21,11 +21,17 @@ import { CollectionsView } from './views/collections';
 import { CollectionDetailView } from './views/collections/collectionDetail';
 
 export function Routes() {
+  const [searchKey, setSearchKey] = useState('');
+  const submitSearch = (searchKey) => {
+    // console.log("routes: ", searchKey);
+    setSearchKey(searchKey);
+  }
+
   const shouldEnableNftPacks = process.env.NEXT_ENABLE_NFT_PACKS === 'true';
   return (
     <>
       <HashRouter basename={'/'}>
-        <Providers>
+        <Providers propFunction={submitSearch}>
           <Switch>
             {shouldEnableNftPacks && (
               <Route
@@ -82,7 +88,7 @@ export function Routes() {
               path="/collection/:id"
               component={() => <CollectionDetailView />}
             />
-            <Route path="/" component={() => <HomeView />} />
+            <Route path="/" component={() => <HomeView searchKey={searchKey? searchKey : ''}/>} />
           </Switch>
         </Providers>
       </HashRouter>

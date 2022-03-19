@@ -22,7 +22,7 @@ export enum LiveAuctionViewState {
   Own = '4',
 }
 
-export const SalesListView = (props: { collectionMintFilter?: string }) => {
+export const SalesListView = (props: { collectionMintFilter?: string, searchKey?: string }) => {
   const [activeKey, setActiveKey] = useState(LiveAuctionViewState.All);
   const { isLoading } = useMeta();
   const { connected } = useWallet();
@@ -34,6 +34,13 @@ export const SalesListView = (props: { collectionMintFilter?: string }) => {
         auction =>
           auction.thumbnail.metadata.info.collection?.key ===
           props.collectionMintFilter,
+      );
+    }
+    if (props.searchKey) {
+      const searchKey = props.searchKey;
+      return auctions.filter(
+        auction =>
+        auction.thumbnail.metadata.info.data?.name.includes(searchKey)
       );
     }
     return auctions;
