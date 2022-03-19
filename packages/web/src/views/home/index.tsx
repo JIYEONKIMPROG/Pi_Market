@@ -5,15 +5,24 @@ import { useMeta } from '../../contexts';
 import { SalesListView } from './components/SalesList';
 import { SetupView } from './setup';
 
-export const HomeView = () => {
+export const HomeView = (props: {searchKey?: string}) => {
   const { isLoading, store } = useMeta();
   const { isConfigured } = useStore();
 
   const showAuctions = (store && isConfigured) || isLoading;
 
-  return (
-    <Layout style={{ margin: 0, marginTop: 30, alignItems: 'center' }}>
-      {showAuctions ? <SalesListView /> : <SetupView />}
-    </Layout>
-  );
+  if (props.searchKey){
+    return (
+      <Layout style={{ margin: 0, marginTop: 30, alignItems: 'center' }}>
+        {showAuctions ? <SalesListView searchKey={props.searchKey} /> : <SetupView />}
+      </Layout>
+    );
+  }
+  else {
+    return (
+      <Layout style={{ margin: 0, marginTop: 30, alignItems: 'center' }}>
+        {showAuctions ? <SalesListView/> : <SetupView />}
+      </Layout>
+    );
+  }
 };

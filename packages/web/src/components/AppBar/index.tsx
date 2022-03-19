@@ -118,8 +118,7 @@ export const LogoLink = () => {
   );
 };
 
-export const AppBar = () => {
-  const [searchKey, setSearchKey] = useState('');
+export const AppBar = (props) => {
   const { connected } = useWallet();
   const inputStyle = {
     height: '40px',
@@ -134,8 +133,7 @@ export const AppBar = () => {
 
   const onChangeSearch = event => {
     if (event.key === 'Enter') {
-      setSearchKey(event.target.value);
-      console.log(searchKey);
+      props.propFunction(event.target.value);
     }
   };
 
