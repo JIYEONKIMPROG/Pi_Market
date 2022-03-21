@@ -10,7 +10,7 @@
 
 ## Overview
 The Solana Metaplex NFT Marketplace, **Pi-Market** <br><br>
-Pi-market is an NFT market where you can mint and freely purchase NFT works related to the school you belong to. Sell and purchase any works of art, including photos, pictures, videos, music, etc. from your beloved school. <br><br>
+Pi-market is an NFT market where you can mint and freely purchase university NFT merchandises. Sell and purchase any work of art, including photos, pictures, videos, music and so on from your beloved society. <br><br>
 Paint Us with Your NFTs 😎
 
 ## Features
@@ -50,7 +50,7 @@ https://docs.metaplex.com/storefront/init-store
 ## Contributors
 
 - :girl: [Jiyeon Kim](https://github.com/JIYEONKIMPROG) - frontend
-- :girl: [Haeun Kim](https://github.com/rosieposiess) - frontend
-- :girl: [Suji Yoon](https://github.com/Yoon-Suji) - frontend
-- :girl: [Jisun Jang](https://github.com/Jess-J) - productor
+- :girl: [Haeun Kim](https://github.com/rosieposiess) - frontend/backend
+- :girl: [Suji Yoon](https://github.com/Yoon-Suji) - fronten/backend
+- :girl: [Jisun Jang](https://github.com/Jess-J) - product manager
 
