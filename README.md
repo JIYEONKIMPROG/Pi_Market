@@ -51,6 +51,6 @@ https://docs.metaplex.com/storefront/init-store
 
 - :girl: [Jiyeon Kim](https://github.com/JIYEONKIMPROG) - frontend
 - :girl: [Haeun Kim](https://github.com/rosieposiess) - frontend/backend
-- :girl: [Suji Yoon](https://github.com/Yoon-Suji) - fronten/backend
+- :girl: [Suji Yoon](https://github.com/Yoon-Suji) - frontend/backend
 - :girl: [Jisun Jang](https://github.com/Jess-J) - product manager
 
