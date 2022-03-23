@@ -24,8 +24,7 @@ Paint Us with Your NFTs 😎
 1. Clone the repo, and run yarn to deploy.
 
 ```bash
-$ git clone https://github.com/metaplex-foundation/metaplex.git
-$ cd metaplex/js
+$ git clone https://github.com/JIYEONKIMPROG/Pi_Market.git
 $ yarn install && yarn bootstrap && yarn build
 ```
 
