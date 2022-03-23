@@ -126,7 +126,7 @@ code {
 
 .ant-upload.ant-upload-drag {
   border-radius: 8px;
-  border-color: transparent;
+  border-color: #7da190;
 }
 
 .tab-title {
@@ -209,19 +209,31 @@ h1 {
   font-size: 2rem;
 }
 .ant-btn:hover {
-  background-color: transparent !important;
+  background: linear-gradient(180deg, #f4ffcb 0%, #aaffe9 100%);
+    background-color: rgba(255, 255, 255, 0.05) !important;
+    font-style: normal;
+    font-weight: 600;
+  border: radius 8px;
+  font-size: 15px;
+  line-height: 18px;
+  /* identical to box height */
+  letter-spacing: 0px;
+
+  /* text/default */
+  color: #006441;
+    border: transparent;
 }
 .ant-steps-item-process
   > .ant-steps-item-container
   > .ant-steps-item-content
   > .ant-steps-item-title {
-  color: hsla(0, 0%, 100%, 0.85);
+  color: hsla(0, 0%, 0%, 0.85);
 }
 .ant-steps-item-wait
   > .ant-steps-item-container
   > .ant-steps-item-content
   > .ant-steps-item-title {
-  color: hsla(0, 0%, 100%, 0.45);
+  color: hsl(0deg 0% 0% / 45%);
 }
 .ant-steps-item-wait
   .ant-steps-item-icon
@@ -230,10 +242,10 @@ h1 {
   background: hsla(0, 0%, 100%, 0.3);
 }
 .ant-card {
-  background: #141414;
+  background: #00704A;
 }
 .ant-card-bordered {
-  border: 1px solid #303030;
+  border: transparent;
 }
 
 .ant-card-meta-title {
@@ -259,9 +271,9 @@ h1 {
 
     &:hover,
     &:focus {
-      background: transparent !important;
+      background: #00ffbda3 !important;
       border-color: @metaplex-primary-color !important;
-      color: @metaplex-primary-color !important;
+      color: #444444 !important;
     }
 
     &:disabled,
