@@ -131,7 +131,7 @@ const AddFundsModal = (props: {
             fontWeight: 700,
           }}
         >
-          <span style={{ color: 'rgba(0, 0, 0)' }}>Balance</span>
+          <span style={{ color: '#ffffff' }}>Balance</span>
           <span>
             {formatNumber.format(props.balance)}&nbsp;&nbsp;
             <span
@@ -162,7 +162,7 @@ const AddFundsModal = (props: {
             height: 'auto',
           }}
         >
-          Close
+         <span style={{ marginRight: 5, color:'#ffff' }}>Sign with</span>
         </Button>
         <Button
           onClick={() => {
@@ -179,7 +179,7 @@ const AddFundsModal = (props: {
             marginLeft: '2%',
             padding: 10,
             height: 'auto',
-            borderColor: 'black',
+            borderColor: 'white',
           }}
         >
           <div
@@ -192,7 +192,7 @@ const AddFundsModal = (props: {
               fontSize: 16,
             }}
           >
-            <span style={{ marginRight: 5 }}>Sign with</span>
+            <span style={{ marginRight: 5, color:'#ffff' }}>Sign with</span>
             <img src="/ftxpay.png" width="80" />
           </div>
         </Button>

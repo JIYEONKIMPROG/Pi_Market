@@ -50,7 +50,7 @@ export const Banner = (props: {
           <div id={'message-container'} style={{margin:'auto', maxWidth:'100% !important'}}>
             <div style={{display:'flex',width:'100%',borderBottom:'1px solid black'}}>
               <div>
-            <div style={{fontSize:'60px',fontWeight:'normal',marginBottom:'50px',textShadow:'4px 4px 4px rgba(0, 0, 0, .5)'}} id={'main-heading'}>{props.headingText}</div>
+            <div style={{fontSize:'60px',fontWeight:'bold',marginBottom:'50px',color:'#00704a',textShadow:'0px 1px 5px rgba(0, 0, 0, .5)'}} id={'main-heading'}>{props.headingText}</div>
             <div style={{fontSize:'20px', lineHeight:'40px'}} id={'sub-heading'}>{props.subHeadingText}</div>
             </div>
             <img  style={{width:'500px',marginTop:'-200px',marginLeft:'300px'}}src="/wave.png"/>
