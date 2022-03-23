@@ -25,6 +25,7 @@ Paint Us with Your NFTs 😎
 
 ```bash
 $ git clone https://github.com/JIYEONKIMPROG/Pi_Market.git
+$ cd Pi_Market
 $ yarn install && yarn bootstrap && yarn build
 ```
 
